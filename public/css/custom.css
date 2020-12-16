@@ -1,0 +1,244 @@
+body, #header {
+  font-size: 1rem;
+  background: url('../img/bg-white.jpg');
+}
+
+#content{
+  margin-top: 110px !important;
+}
+
+a, a:hover {
+  color: #e70718;
+  text-decoration: none;
+}
+
+.bg-red, .bg-nav {
+  background-color: #e70718;
+}
+
+.bg-deep-red {
+  background-color: #ae210f;
+}
+
+.bg-gradient {
+  background:  linear-gradient(to right, rgba(210, 7, 24, 1) 0%, rgba(157, 5, 18, 1) 100%)
+}
+
+.text-red {
+  color: #e70718;
+}
+
+.common-button {
+  background-color: #e70718;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.common-button:hover {
+  background-color: #ae210f;
+  color: #ffffff;
+}
+
+.common-button-revert {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #e70718;
+}
+
+.common-button-revert:hover {
+  box-shadow: 2px 3px 9px #380106;
+}
+
+.blue-button {
+  background-color:#203b79;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.blue-button:hover {
+  background-color: #3b5998;
+  color: #ffffff;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.menulist img {
+  width: 120px;
+  height: auto;
+}
+
+.menulist img:hover {
+  transform: scale(1.2);
+}
+
+.menu-signout {
+  border: none;
+  background: transparent;
+}
+
+.card-style {
+  height: 220px;
+  border-radius: 25px;
+  border: solid 5px #ffffff;
+  transform: rotate(-10deg);
+  box-shadow: 2px 3px 9px #380106;
+}
+
+.card-detail img {
+  width: auto;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#credit-card img {
+  height: 26px;
+}
+
+.header-icon {
+  font-size: 1.6rem;
+}
+
+.lang:hover .header-icon:hover{
+  color: #e70718;
+}
+
+#footer {
+  position: relative;
+}
+
+#footer-detail {
+  background-color: #6a1c10;
+  font-size: 0.9rem;
+}
+
+#footer-detail .nav-link {
+  color: #ffffff;
+}
+
+#footer-detail .nav-link:hover {
+  color: #c7c7c7;
+}
+
+.footer-icon, .menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-icon:hover {
+  transform: translateY(2px);
+}
+
+.large-font {
+  font-size: 1.2rem;
+}
+
+.small-font {
+  font-size: 0.8rem;
+}
+
+.line-center {
+  overflow: hidden;
+  text-align: center;
+}
+
+.line-center:before,
+.line-center:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.line-center:before {
+  right: 0.5em;
+  margin-left: -35%;
+}
+
+.line-center:after {
+  left: 0.5em;
+  margin-right: -35%;
+}
+
+/* display large size and more than */
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link i{ transform: translateY(2px);  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; background-color: #ae210f;}
+  .navbar .nav-item .dropdown-menu .dropdown-item:hover{ background-color: #e70718; }
+  #menuList .nav-item:hover:not(.nav-member) { background-color: #ae210f;}
+  #menuList .nav-member { background-color: #b78009;}
+  #menuList .nav-member:hover { background-color: #966600;}
+}
+
+/* display medium size and more than */
+@media (min-width: 768px) {
+  #menuList .nav-member { background-color: #b78009;}
+  #menuList .nav-member:hover { background-color: #966600;}
+}
+
+/* display medium size and less than */
+@media (max-width: 991.98px) {  
+  .card-style {
+    height: 180px;
+    border-radius: 25px;
+    border: solid 5px #ffffff;
+    transform: rotate(-10deg);
+    box-shadow: 2px 3px 9px #380106;
+  }
+
+  .large-font {
+    font-size: 1rem;
+  }  
+}
+
+/* display small size and less than */
+@media (max-width: 767.98px) {
+  .bg-nav {
+    background: url('../img/bg-white.jpg');
+  }
+
+  #content{
+    margin-top: 50px !important;
+  }
+
+  .menulist-slick img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* display extra small size and less than */
+@media (max-width: 575.98px) {
+  #credit-card img {
+      height: 20px;
+  }
+
+  #footer-detail {
+    font-size: 0.7rem;
+  }
+
+  .small-font {
+    font-size: 0.6rem;
+  }
+
+  .menulist-slick img {
+    width: 120px;
+    height: auto;
+  }
+
+  .card-style {
+    height: 150px;
+    border-radius: 25px;
+    border: solid 5px #ffffff;
+    transform: rotate(-10deg);
+    box-shadow: 2px 3px 9px #380106;
+  }
+}
